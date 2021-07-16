@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt01.Page2"
+             Title="Oblicz prąd">
+
+    <StackLayout Padding="60">
+
+        <Entry x:Name="moc" 
+               Keyboard="Numeric" 
+               Placeholder="Podaj moc" 
+               HorizontalTextAlignment="End" />
+
+        <Entry x:Name="nap"
+               Keyboard="Numeric" 
+               Placeholder="Podaj Napięcie" 
+               HorizontalTextAlignment="End" />
+
+        <Button Clicked="Button_Clicked"
+                BackgroundColor="AliceBlue"
+                Text="Oblicz"/>
+
+        <Entry x:Name="pra" 
+               Keyboard="Numeric" 
+               Placeholder="Wartość prądu" 
+               HorizontalTextAlignment="End" />
+  
+    </StackLayout>
+</ContentPage>

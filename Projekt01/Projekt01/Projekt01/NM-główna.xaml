@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="ModalNavigation.MainPage"
+             Title="Nawigacja Modalna">
+
+    <!---->
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Przydatne info : " FontSize="Medium"/>
+            <Label Text= "W przypadku kodu utworzonego poniżej 2017r warto sprawdzać na deklarację Label,
+ponieważ w Visual 2017 będzie już tylko działał z deklaracją Xamarin.Forms.Label,
+Font -> FontSize ... itd ..."
+           TextColor="DarkMagenta"
+           FontSize="Medium"/>
+            
+            <ListView x:Name="listView" ItemSelected="OnItemSelected" />
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

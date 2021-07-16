@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt01.Domowa"
+             Title="Przywitaj się">
+
+    <StackLayout Padding="50">
+        <Label Text="Wpisz swoje imię"/>
+
+        <Grid Padding="50,50,50,50">
+            <Entry x:Name="GlownyWpis"
+               BackgroundColor="LemonChiffon" />
+        </Grid>
+        <!--Padding - lewo, góra, prawo, dół-->
+        
+        <Button Clicked="Button_Clicked"
+        Text="Przywitaj się"
+        BackgroundColor="CornflowerBlue" />
+
+        <Label x:Name="GlownyLabel"
+               FontSize="Large"
+               FontAttributes="Italic"/>
+
+        <!--
+        <Button Clicked="Button_Clicked_1"
+        Text="Oblicz -> Pitagoras"
+        TextColor="BlanchedAlmond" />
+
+        <Label Text="Przesuń palcem w lewą stronę ekranu by przejść do ... ;)"/>
+        <Label Text="Bądź kliknij i przesuń w lewą stronę ekranu by przejść do ..."/>
+        -->
+
+    </StackLayout>
+    
+</ContentPage>

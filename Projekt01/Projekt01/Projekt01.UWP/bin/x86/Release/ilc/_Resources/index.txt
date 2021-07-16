@@ -1,0 +1,5 @@
+Projekt01.UWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  Projekt01.UWP.bMainPage.xaml
+  Projekt01.UWP.App.xaml
+  Projekt01.UWP.NM-główna.xaml
+  Projekt01.UWP.NMdetailpage.xaml

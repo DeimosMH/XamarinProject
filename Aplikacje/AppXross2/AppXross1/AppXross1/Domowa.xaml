@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXross1.Domowa">
+
+    <StackLayout>
+    <!-- powłoka w ktorej bdzie realizowane to co jest wewnatrz -->
+
+        <Label Text="Podaj swoje imię"/>
+        <!-- Deklaruje widoczny tekst na samej górze aplikacji-->
+        
+        <Entry x:Name="GlownyWpis"/>
+        <!-- Nasze pole tekstowe w ktorym napiszemy swoje imie -->
+
+        <Button Clicked="Button_Clicked"
+                Text="Przywitaj się!"/>
+        <!-- przycisk w xaml-->
+        <!-- Po wpisaniu  Clicked=" <nowa procedura obsługi zdarzeń>" 
+        zostanie utworzona w Domowa.xaml.cs funkcja określająca działanie przycisku -->
+
+        <Label x:Name="GlownyLabel"/>
+        <!-- będzie realizować dane zadanie  -> patrz Domowa.xaml.cs 
+        (mozesz tez kliknac prawym przyciskiem myszy -> przejdz do definicji) -->
+
+    </StackLayout>
+
+</ContentPage>

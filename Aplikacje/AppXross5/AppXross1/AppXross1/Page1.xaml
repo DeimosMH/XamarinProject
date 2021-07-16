@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXross1.Page1"
+             
+             Title="Druga strona">
+            <!--Nadaliśmy tytuł naszej stronki -->
+
+    <Label x:Name="DrogiLabel"
+           TextColor="Gray"/>
+    <!--Label wyświetla text w Xamarin.Forms-->
+    <!--Zadeklarowujemy go jako parametr w Page1.xaml.cs-->
+
+</ContentPage>

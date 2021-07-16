@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXross1.Domowa"
+             BackgroundColor="White">
+    <!-- Bez BackgroundColor o takim samym kolorze co stack layaut 
+    pojawią się paski o innych kolorach (chyba że nie zastosuje się VerticalOptions w stacklayaut) -->
+
+    <StackLayout BackgroundColor="White"
+                 Padding="60"
+                 VerticalOptions="Center">
+        <!--Kolor powłoki aplikacji-->
+        <!--Padding powoduje, że przyciski i tekst oddalą się od krawędzi ekranu w ""-->
+        <!--VerticalOptions - centruje powłokę aplikacji (Bez BackgroundColor będą paki) -->
+        
+    <!-- powłoka w ktorej bdzie realizowane to co jest wewnatrz -->
+
+        <Label Text="Podaj swoje imię"/>
+        <!-- Deklaruje widoczny tekst na samej górze aplikacji-->
+
+        <Grid Padding="0,0,0,50">
+            <!-- Padding nadaje przerwę od głównego wpisu "0,0,0,50" lewo, góra, prawo, dół-->
+
+            <Entry x:Name="GlownyWpis"
+               BackgroundColor="Gray"/>
+        <!--Kolor wpisu-->
+            
+        </Grid>
+        
+        <!-- Nasze pole tekstowe w ktorym napiszemy swoje imie -->
+
+        <Button Clicked="Button_Clicked"
+                Text="Przywitaj się!"
+                BackgroundColor="Green"
+                TextColor="White"/>
+        <!--Kolor przycisku i kolor tekstu-->
+
+        <!-- przycisk w xaml-->
+        <!-- Po wpisaniu  Clicked=" <nowa procedura obsługi zdarzeń>" 
+        zostanie utworzona w Domowa.xaml.cs funkcja określająca działanie przycisku -->
+
+        <Label x:Name="GlownyLabel"
+               TextColor="Gray"
+               FontSize="40"/>
+        <!--Kolor tekstu i rozmiar czcionki w "" -->
+        
+        <!-- będzie realizować dane zadanie  -> patrz Domowa.xaml.cs 
+        (mozesz tez kliknac prawym przyciskiem myszy -> przejdz do definicji) -->
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt01.Page1"
+             Title="Pitagoras"
+             >
+    
+    <StackLayout BackgroundColor="BlanchedAlmond"
+                 Padding="50">
+
+        <Image Source="tw.jpg" /> 
+        <!--zdjęcie działa na podstawie 
+        https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/#Local_Images
+        Pod "Using Xaml-->
+
+        <Label Text="Podaj długość 2 boków. Wynik to 3 bok "/>
+
+        <Entry x:Name="boka"               
+               Keyboard="Numeric" 
+               Placeholder="Podaj bok a" 
+               HorizontalTextAlignment="End"/>
+
+        <Entry x:Name="bokb"
+               Keyboard="Numeric" 
+               Placeholder="Podaj bok b" 
+               HorizontalTextAlignment="End"/>
+
+        <Button Clicked="Button_Clicked"
+                BackgroundColor="AliceBlue"
+                Text="Oblicz" />
+
+        <Label x:Name="bokc"
+               FontSize="Large"
+               Text="Wynik boku c"
+               HorizontalTextAlignment="End"/>
+        
+        
+
+    </StackLayout>
+    
+
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXross1.Domowa"
+             BackgroundColor="White">
+
+    <StackLayout BackgroundColor="White"
+                 Padding="60"
+                 VerticalOptions="Center">
+
+        <Label Text="Podaj swoje imię"/>
+
+        <Grid Padding="0,0,0,50">
+
+            <Entry x:Name="GlownyWpis"
+               BackgroundColor="Gray"/>
+
+        </Grid>
+
+        <Button Clicked="Button_Clicked"
+                Text="Przywitaj się!"
+                BackgroundColor="Green"
+                TextColor="White"/>
+
+        <Label x:Name="GlownyLabel"
+               TextColor="Gray"
+               FontSize="40"/>
+
+        <Button Text="Przejdź do drugiej strony"  
+                Clicked="Button_Clicked_1"
+                BackgroundColor="Lavender">
+            <!--tekst na przycisku + nowa definicja zdarzenia Clicked tj Button_Clicked_1 -->
+        </Button>
+
+    </StackLayout>
+
+</ContentPage>

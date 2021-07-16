@@ -1,0 +1,2 @@
+android.app.Application
+AppXross7.Android
